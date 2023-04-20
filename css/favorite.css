@@ -1,0 +1,99 @@
+.favorite-card{
+
+  position:relative;
+  
+  width : 870px;
+  height: 100%;
+
+  background-color: transparent;
+  
+  margin : 10px;
+}
+
+/* .favorite-card:hover .favorite-card-inner {
+  transform: rotateY(180deg);
+} */
+
+.favorite-card-inner {
+
+  text-align: center;
+
+  
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+  
+.favorite-card-front, .favorite-card-back {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.favorite-card-front {
+
+  border-radius: 5px;
+
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+.favorite-card-back {
+
+  border-radius: 5px;
+
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transform: rotateY(180deg);
+}
+
+.data_favorite{
+
+  width : 100px;
+  height: auto;
+  text-align: center;
+
+  background-color: bisque;
+  border-radius: 5px;
+
+  border: 0px;
+
+  padding: 5px;
+
+  margin: 5px;
+
+  transition: all 0.3s;
+
+}
+
+.data_favorite:hover{
+  background-color: darksalmon;
+  transition: all 0.3s;
+}
+
+#monitoring{
+
+  font-size: 30px;
+
+  z-index: 1;
+  
+  left: 10px;
+  top: 10px;
+  position: absolute;
+
+  border-radius: 50%;
+
+  color: white;
+
+  padding: 5px;
+
+  background-color: black;
+
+}
+@media (max-width:900px) {
+
+    .favorite{
+      width: 100%;
+    }
+  }
