@@ -5,3 +5,5 @@ Pour lancer le projet, il suffit d'installer node, placez-vous à la racine du p
 ```npm install```
 
 ```npm start```
+
+Plus d'information à venir ...
